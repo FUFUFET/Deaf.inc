@@ -1,0 +1,136 @@
+.container{
+    display: grid;
+    height:100%;
+    grid-template-columns:1fr ;
+    grid-template-rows:0.1fr 0.3fr 0.3fr 0.2fr 0.1fr;
+    grid-template-areas: "nav""main""Customer" "Payment""footer" ;}
+
+
+
+/* link property start */
+a{
+    text-decoration: none;
+    color: black;}
+    
+
+a:focus{
+    font-weight: bold;
+    border: solid 5px;
+    border-color: #E9C2F8;
+    outline: #324AA4;}
+
+a:hover{ 
+    border: solid 3px #E9C2F8;
+    color: #FFF;
+    background-color: #324AA4;}
+    
+   
+    
+
+#active{
+    text-decoration:underline;
+    text-decoration-color: #E9C2F8;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 3px;
+    font-weight: bold;}
+
+
+
+a:visited{text-decoration: none;}
+
+/* link property end */
+
+/* nav property start */
+nav{
+    grid-area: nav;
+    font-family:Montserrat;
+    background-color: aqua;
+    font-size:16px;
+    display:flex;
+    align-items:center;
+    height:100px;
+    width:90%;
+    margin:0 auto;
+    justify-content: space-between;}
+
+.chat:hover{
+        border: solid 3px #E9C2F8;
+        background-color: #ffffff;}
+        
+          
+
+nav ul{
+    display: flex;}
+    
+
+nav li{
+    list-style-type: none;
+    padding: 0;}
+
+.navlistcenter{
+    padding: 5px 25px;}
+
+
+.contactandchat{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;}
+   
+
+.contactus{
+    padding: 10px 20px;
+    /* margin:0px 15px; */
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border-color: black;}
+    
+/* nav property end */
+main{
+    grid-area: main;
+    background-color: rgb(100, 167, 141);}
+
+.Customer{
+    grid-area: Customer;
+    background-color: rgb(135, 202, 222);}
+
+.Payment{
+    grid-area: Customer;
+    background-color: rgb(135, 144, 222);}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(216, 183, 139);
+    display: grid;
+    width: 90%;
+    height:100%;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:2fr;
+    grid-template-areas: "footerbox1 footerbox2 footerbox3 footerbox4 footerbox5 footerbox6" ;
+    margin: 0 auto;
+font-family: Lato;}
+    
+    
+
+footer li{
+    list-style-type: none;
+    padding: 5px 0px;}
+.footerbox1{grid-area: footerbox1;
+align-content: center;
+margin: 0 auto;}
+.footerbox2{grid-area: footerbox2;}
+.footerbox3{grid-area: footerbox3;}
+.footerbox4{grid-area: footerbox4;}
+.footerbox5{grid-area: footerbox5;}
+.footerbox6{grid-area: footerbox6;
+    position: relative;}
+    .SNS{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
+
+    
+    
