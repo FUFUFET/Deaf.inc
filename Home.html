@@ -10,7 +10,7 @@
         
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-        
+        <script src="Home.js"></script>
         <title>Home</title>
 
         
@@ -36,8 +36,9 @@
                   </a></div>
             </nav>
             <main>
-              <a href="#"class="contactus2" >REQUEST INTERPRETER</a>
-                <div class="circle"></div>
+              <a href="#"class="contactus2" ><h1>REQUEST INTERPRETER</h1></a>
+                <div class="circle" id="fireofring"></div>
+                
                 <svg>
                   <filter id="wavy">
                     <feTurbulence x="0" y="0" baseFrequency="0.009" num0ctaves="5" seed="2">
@@ -46,12 +47,17 @@
                     <feDisplacementMap in="SourceGraphic" scale="30">
                   </filter>
                 </svg>
+                
+                  <div>
+                    <button class="onoff" onclick="show_hide()">SHOW/HIDE</button>
+                  </div>
+              
             </main>
             <div class="connunicate"></div>
             <div class="whatwedo"></div>
             
             <footer>
-                <div class="footerbox1"><img src="logo.svg" width="120px"><p>25 E. Frisco Avenue
+                <div class="footerbox1"><img src="logo.svg" width="120px" role="img"><p>25 E. Frisco Avenue
                     St. Louis, Mo 63119</p></div>
                 <div class="footerbox2">
                     <ul class="aboutbox">
