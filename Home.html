@@ -18,12 +18,13 @@
     <body>
         <div class="container">
             <nav>
+              <div class="desktop-nav">
                 <a href="#" class="logo">
                     <img src="logo.svg" width="120px"alt="logo" role="img">
                   </a>
                   <ul>
-                  <li><a href="#" id="active" class="navlistcenter">Home</a></li>
-                  <li><a href="#" class="navlistcenter">Interpretation</a></li>
+                  <li><a href="#" id="active" class="navlistcenter" aria-current="page">Home</a></li>
+                  <li><a href="Requestpage.html" class="navlistcenter">Interpretation</a></li>
                   <li><a href="#" class="navlistcenter">About</a></li>
                   <li><a href="#" class="navlistcenter">Events</a></li>
                   <li><a href="#" class="navlistcenter">Donate</a></li>
@@ -34,12 +35,27 @@
                     <img src="chat.svg" role="img" alt="chat" width="44px">
                     
                   </a></div>
+                </div>
+
+                
+<!-- -- mobile menu start -- -->
+                  <!-- <button type="button" id="js-buttonHamburger" class="p-hamburger" aria-controls="global-nav" aria-expanded="false">
+                    <span class="p-hamburger__line">
+                      <span class="u-visuallyHidden">
+                        open menu
+                      </span>
+                    </span>
+                  </button>
+                     -->
+                   
+
+<!-- -- mobile menu end -- -->                  
             </nav>
             <main>
-              <a href="#"class="contactus2" ><h1>REQUEST INTERPRETER</h1></a>
+              <a href="Requestpage.html"class="contactus2" ><h1>REQUEST INTERPRETER</h1></a>
                 <div class="circle" id="fireofring"></div>
                 
-                <svg>
+                <svg role="img" alt="animation ring of fire">
                   <filter id="wavy">
                     <feTurbulence x="0" y="0" baseFrequency="0.009" num0ctaves="5" seed="2">
                       <animate attributeName="baseFrequency" dur="60s" values="0.04;0.001;0.04" repeatCount="indefinite">
@@ -49,12 +65,28 @@
                 </svg>
                 
                   <div>
-                    <button class="onoff" onclick="show_hide()">SHOW/HIDE</button>
+                    <button class="onoff" onclick="show_hide()" >Animation: Show/Hide</button>
                   </div>
               
             </main>
-            <div class="connunicate"></div>
-            <div class="whatwedo"></div>
+            <div class="communicate">
+              <h2 class="connect">Communicate & Connect </h2>
+              <img src="sign2.svg" alt="sign language example1" width="1400px" class="sign2">
+              <p calss="AAA" id="hire">Hire a intepreter, make connections and be empowered.<br><br>Create diaglog through community outreach, training, education, advocacy, media, visual arts, and interpreting.</p>
+              <div class="learn"><a href="Requestpage.html" class="contactus">LEARN MORE</a></div>
+            </div>
+
+            <div class="whatwedo">
+              <h2 class="welove">We Love What  We Do </h2>
+              <p calss="BBB" id="hire2">It’s that easy: We  LOVE what we do .<br><br> 
+       
+                Deaf Empowerment Awareness Foundation (Deaf Inc) strives to to empower the deaf and hard of hearing communities in the metro St. Louis area.   
+                  </p>
+              <img src="sign1.svg" alt="sign language example2" width="1400px" class="sign1">
+              
+              <div class="learn"><a href="#" class="contactus">LEARN MORE</a></div>
+            </div>
+            </div>
             
             <footer>
                 <div class="footerbox1"><img src="logo.svg" width="120px" role="img"><p>25 E. Frisco Avenue

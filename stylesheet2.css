@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;}
 
+    html{
+        line-height: 1.6em;
+    }
 
 .container{
     display: grid;
     height:100%;
     grid-template-columns:1fr ;
-    grid-template-rows:0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
-    grid-template-areas: "nav" "main" "connunicate" "whatwedo" "footer" ;}
+    grid-template-rows:0.1fr 0.5fr 0.7fr 0.7fr 0.1fr;
+    grid-template-areas: "nav" "main" "communicate" "whatwedo" "footer" ;}
 
 
 
@@ -34,7 +37,7 @@ a:hover{
 
 #active{
     text-decoration:underline;
-    text-decoration-color: #E9C2F8;
+    text-decoration-color: #324AA4;
     text-underline-offset: 2px;
     text-decoration-thickness: 3px;
     font-weight: bold;}
@@ -45,10 +48,10 @@ a:visited{text-decoration: none;}
 
 /* link property end */
 
-/* nav property start */
+/* desktopnav property start */
 nav{
     grid-area: nav;
-    font-family:Montserrat;
+    /* font-family:Montserrat;
     background-color: rgb(255, 255, 255);
     font-size:16px;
     display:flex;
@@ -56,7 +59,20 @@ nav{
     height:100px;
     width:90%;
     margin:0 auto;
-    justify-content: space-between;}
+    justify-content: space-between;} */}
+
+    .desktop-nav{
+        font-family:Montserrat;
+        background-color: rgb(255, 255, 255);
+        font-size:16px;
+        display:flex;
+        align-items:center;
+        height:100px;
+        width:90%;
+        margin:0 auto;
+        justify-content: space-between;
+        
+    }
 
 .chat:hover{
         border: solid 3px #E9C2F8;
@@ -94,7 +110,11 @@ nav li{
         font-size: 16px;
     }
     
-/* nav property end */
+/* desktopnav property end */
+
+/* mobile pnav property start */
+
+  /* mobile pnav property end */
 
 /* main property starts */
 main{
@@ -228,10 +248,124 @@ color: #fff;}
 
 /* main property ends */
 
+/* main div1 start */
+ .communicate{
+     display: grid;
+    grid-area: communicate;
+    background-color: #E9FAFE;
+    display: grid;
+    width: 100%;
+    height:100%;
+    grid-template-columns:1.5fr 0.5fr;
+    grid-template-rows:0.4fr 0.8fr 0.2fr;
+    grid-template-areas: "connect connect" "sign2 AAA" "sign2 learn";
+    margin: 0 auto;
+font-family: Montserrat;
+padding-bottom: 50px;
+
+} 
+.connect{
+    font-size: 30px;
+    grid-area: connect;
+    align-self: center;
+    justify-self: center;
+
+}
+.sign2{
+    grid-area: sign2;
+    max-width: 95%;
+    
+}
+.AAA p{
+    grid-area: AAA;
+    
+}
+
+#hire{
+    align-self: center;
+    margin: 0 auto;
+   font-size: 20px;
+width: 320px;
+max-width: 90%;}
+/* #hire{
+    font-size: 20px;
+width: 350px;
+max-width: 90%;} */
+
+.learn{
+    display: grid;
+    place-items: center;}
+/* .more{
+    padding: 10px 20px;
+    color: white;
+    background-color: #324AA4;
+    border-color: #324AA4;
+}    
+.more:hover{
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-color: #000000;
+ } 
+ .more:focus{
+ font-weight: bold;
+    border: solid 5px;
+    background-color: #fff;
+    border-color: #324AA4;
+    outline: #324AA4;
+color: black;} */
+/* main div1 end */
+
+/* main div1 start */
+.whatwedo{
+    display: grid;
+   grid-area: whatwedo;
+   background-color:  #e2e5fa;
+   display: grid;
+   width: 100%;
+   height:100%;
+   grid-template-columns:0.5fr 1.5fr ;
+   grid-template-rows:0.4fr 0.8fr 0.2fr;
+   grid-template-areas: "welove welove" " BBB sign1" " learn sign1";
+   margin: 0 auto;
+font-family: Montserrat;
+padding-bottom: 30px;
+} 
+.welove{
+   font-size: 30px;
+   grid-area: welove;
+   align-self: center;
+   justify-self: center;
+
+}
+.sign1{
+   grid-area: sign1;
+   max-width: 95%;
+   justify-self: end;
+   
+}
+.BBB p{
+   grid-area: AAA;
+   
+}
+#hire2{
+    align-self: center;
+    margin: 0 auto;
+   font-size: 20px;
+width: 320px;
+max-width: 90%;}
+
+.learn{
+   display: grid;
+   place-items: center;}
+
+/* main div1 end */
+
 /* footer property starts */
 footer{
+    padding-top: 30px;
     grid-area: footer;
-    background-color: rgb(255, 255, 255);
+    background-color: #FFF;
     display: grid;
     width: 90%;
     height:100%;
@@ -245,7 +379,7 @@ font-family: Lato;}
 
 footer li{
     list-style-type: none;
-    padding: 5px 0px;}
+    padding: 5px 0px 5px 30px;}
 .footerbox1{grid-area: footerbox1;
 align-content: center;
 margin: 0 auto;}
