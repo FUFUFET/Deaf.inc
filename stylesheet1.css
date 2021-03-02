@@ -25,10 +25,10 @@ a{
     
 
 a:focus{
-    font-weight: bold;
-    border: solid 5px;
-    border-color: #E9C2F8;
-    outline: #324AA4;}
+        font-weight: bold;
+        border: solid 5px;
+        border-color: #324AA4;
+        outline: #324AA4;}
 
 a:hover{ 
     border: solid 3px #E9C2F8;
@@ -227,7 +227,7 @@ place-items: center;}
     }
     .profile{
         position: absolute;
-        top:-50px;
+        top:-60px;
         
     }
    
