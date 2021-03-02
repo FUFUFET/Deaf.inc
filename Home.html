@@ -10,7 +10,7 @@
         
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-        <script src="Home.js"></script>
+      <!-- <script src="Home.js"></script> -->
         <title>Home</title>
 
         
@@ -36,20 +36,32 @@
                     
                   </a></div>
                 </div>
-
+<!-- mobile nav start -->
+                <div class="mobile-nav">
+                <button class="humburger" id="hamburger"  aria-expanded="false"aria-label="Menu">
+                  <img src="hamburger.svg" width="44px"alt="" role="img" aria-hidden="true">
+                </button>
                 
-<!-- -- mobile menu start -- -->
-                  <!-- <button type="button" id="js-buttonHamburger" class="p-hamburger" aria-controls="global-nav" aria-expanded="false">
-                    <span class="p-hamburger__line">
-                      <span class="u-visuallyHidden">
-                        open menu
-                      </span>
-                    </span>
-                  </button>
-                     -->
-                   
-
-<!-- -- mobile menu end -- -->                  
+                <ul class="mobile-navlist" id="mobile-navlist">
+                <li><a href="#" id="active" class="mobnavlistcenter" aria-current="page">Home</a></li>
+                <li><a href="Requestpage.html" class="mobnavlistcenter">Interpretation</a></li>
+                <li><a href="#" class="mobnavlistcenter">About</a></li>
+                <li><a href="#" class="mobnavlistcenter">Events</a></li>
+                <li><a href="#" class="mobnavlistcenter">Donate</a></li>
+                <li><a href="#" class="mobnavlistcenter">Contact Us</a></li>
+                
+              </ul>
+            
+              <img src="logo.svg" width="120px"alt="deaf inc logo" role="img">
+                
+                <a href="#" class="chat">
+                  <img src="chat.svg" role="img" alt="chat" width="44px">
+                  
+                </a>
+              </div>
+<!-- -- mobile menu end -- -->   
+                
+                
             </nav>
             <main>
               <a href="Requestpage.html"class="contactus2" ><h1>REQUEST INTERPRETER</h1></a>
@@ -133,7 +145,7 @@
 
 
         </div>
-
+        <script src="Home.js"></script>
     </body>
 
     </html>

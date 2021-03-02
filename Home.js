@@ -9,18 +9,28 @@ function show_hide()
 else
   {document.getElementById("fireofring").style.display="none";
   return a=1;
-}
-}
+}}
 
 
-// (function () {
-//   $('#js-buttonHamburger').click(function () {
-//     $('body').toggleClass('is-drawerActive');
+const hamburger = document.getElementById('hamburger');
+const navUL = document.getElementById('mobile-navlist');
 
-//     if ($(this).attr('aria-expanded') == 'false') {
-//       $(this).attr('aria-expanded', true);
-//     } else {
-//       $(this).attr('aria-expanded', false);
-//     }
-//   });
-// }) ();
+hamburger.addEventListener('click',() =>{
+  navUL.classList.toggle('show');
+
+});
+
+
+document.body.classList.toggle('js-enabled')
+document.addEventListener('DOMContentLoaded', function(event){
+
+let ken = document.getElementById('hamburger')
+ken.setAttribute('aria-expanded','false')
+ken.onclick = function(){
+  if(this.getAttribute('aria-expanded') == 'false')
+  {
+this.setAttribute('aria-expanded' ,'true');
+  }else{
+    this.setAttribute('aria-expanded' ,'false');
+  }}});
+  
