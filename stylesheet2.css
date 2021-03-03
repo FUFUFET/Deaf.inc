@@ -228,8 +228,8 @@ svg{
     color: #FFF;
     font-size: 16px;
     position: absolute;
-    bottom: 5%;
-    left: 10%;
+    bottom: 3%;
+    left: 7%;
    
     
 }
@@ -350,7 +350,7 @@ padding-bottom: 30px;
    
 }
 .BBB p{
-   grid-area: AAA;
+   grid-area: BBB;
    
 }
 #hire2{
@@ -462,7 +462,7 @@ margin: 0 auto;}
 
  /* hamburger    end    */
 
-@media (max-width:900px){
+@media (max-width:800px){
     .desktop-nav{
         display:none;}
     
@@ -482,9 +482,353 @@ margin: 0 auto;}
         
         .mobile-navlist.show{
             display:block;
-        }      
-    }
-
-@media (min-width:901px){
+        }
+        p#hire{font-size: 16px;}
+        p#hire2{font-size: 16px;}   
+     
+        .communicate{
+    
+            display: grid;
+           grid-area: communicate;
+           background-color: #E9FAFE;
+           display: grid;
+           width: 100%;
+           height:100%;
+           grid-template-columns:1fr;
+           grid-template-rows:0.4fr 0.4fr 0.6fr 0.4fr;
+           grid-template-areas: "connect" "AAA" "sign2" "learn";
+           margin: 0 auto;
+       font-family: Montserrat;
+       padding-bottom: 50px;
+       
+        } 
+    
+        #hire{
+            line-height: 1.6em;
+            align-self: center;
+            margin: 0 auto;
+           font-size: 20px;
+        width: 600px;
+        max-width: 90%;
+    text-align: center;}
+    
+        .sign2{
+            grid-area: sign2;
+            max-width: 95%;
+            justify-self: center;
+            
+        }
+        .whatwedo{
+    
+            display: grid;
+           grid-area: whatwedo;
+           background-color:  #e2e5fa;
+           display: grid;
+           width: 100%;
+           height:100%;
+           grid-template-columns:1fr;
+           grid-template-rows:0.4fr 0.5fr 0.6fr 0.4fr;
+           grid-template-areas: "welove" "BBB" "sign1" "learn";
+           margin: 0 auto;
+        font-family: Montserrat;
+        padding-bottom: 10px;
+        } 
+       
+        .sign1{
+           grid-area: sign1;
+           max-width: 95%;
+           justify-self: center;
+           
+        }
+        .BBB p{
+           grid-area: BBB;
+           
+        }
+        #hire2{
+            line-height: 1.6em;
+            align-self: center;
+            margin: 0 auto;
+           font-size: 20px;
+        width: 600px;
+        max-width: 90%;
+    text-align: center;}}
+       /* .connect{
+           font-size: 30px;
+           grid-area: connect;
+           align-self: center;
+           justify-self: center;
+       
+       }
+     
+       .AAA p{
+           grid-area: AAA;
+           
+       }
+       
+       
+       /* #hire{
+           font-size: 20px;
+       width: 350px;
+       max-width: 90%;} */
+       
+       /* .learn{
+           display: grid;
+           place-items: center;}
+    } */ 
+    @media (max-width:1000px){
+    p#hire{font-size: 16px;}
+    p#hire2{font-size: 16px;}}
+@media (min-width:801px){
     .mobile-nav{
         display:none;}}
+
+        @media (min-width:501px) and (max-width:1000px){
+                            footer{
+                                padding-top: 3%;
+                                grid-area: footer;
+                                background-color: #FFF;
+                                display: grid;
+                                width: 90%;
+                                height: max-content;
+                                grid-template-columns:1fr 1fr 1fr 1fr ;
+                                grid-template-rows:0.5fr 0.3fr;
+                                grid-template-areas: "footerbox2 footerbox3 footerbox4 footerbox5 ""footerbox1 footerbox1 footerbox6 footerbox6 " ;
+                                margin: 0 auto;
+                            }
+                                
+                                
+                            
+                            footer li{
+                                list-style-type: none;
+                                padding: 5px 0px 5px 30px;}
+                            .footerbox1{grid-area: footerbox1;
+                            margin-left: 0;}
+                            .footerbox2{grid-area: footerbox2;}
+                            .footerbox3{grid-area: footerbox3;}
+                            .footerbox4{grid-area: footerbox4;}
+                            .footerbox5{grid-area: footerbox5;}
+                            .footerbox6{grid-area: footerbox6;
+                                position: relative;}
+                                .SNS{
+                                    position: absolute;
+                                    bottom: 0;
+                                    right: 0;
+                                }
+                        
+                       
+                }
+                @media (max-width:650px){
+                    .circle{width: 550px;
+                        height: 550px;
+                }
+            
+                .circle:before{
+                    content:'';
+                    position: absolute;
+                    top: 50px;
+                    left: 50px;
+                    right: 50px;
+                    bottom: 50px;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    /* box-shadow: 0 0 50px #0f0,inset 0 0 50px #0f0; */
+                    /* box-shadow: 0 0 70px rgb(25, 0, 255),inset 0 0 70px rgb(25, 0, 255); */
+                    /* -webkit-box-reflect:below 10px liner-gradient(transparent,#0002); */
+                    animation: animate 7s linear infinite;
+                }
+                .circle:after{
+                    content:'';         
+                    position: absolute;
+                    top: 50px;
+                    left: 50px;
+                    right: 50px;
+                    bottom: 50px;
+                    border:1px solid #fff;
+                    border-radius: 50%;
+                    /* box-shadow: 0 0 50px #0f0,inset 0 0 50px #0f0; */
+                    /* box-shadow: 0 0 100px #FFF,inset 0 0 0px #fff; */
+                    /* -webkit-box-reflect:below 10px liner-gradient(transparent,#0002); */
+                    animation: animate 7s linear infinite;
+                }
+                @keyframes animate
+                {0%
+                    {box-shadow: 0 0 35px rgb(25, 0, 255),inset 0 0 35px rgb(25, 0, 255);
+                    filter:hue-rotate(0deg)}
+                
+                    20%
+                 {box-shadow: 0 0 40px rgb(25, 0, 255),inset 0 0 40px rgb(25, 0, 255); }
+                
+                 40%
+                 {box-shadow: 0 0 40px rgb(25, 0, 255),inset 0 0 40px rgb(25, 0, 255); }
+                
+                 60%
+                 {box-shadow: 0 0 50px rgb(25, 0, 255),inset 0 0 50px rgb(25, 0, 255); }
+                
+                 80%
+                 {box-shadow: 0 0 60px rgb(25, 0, 255),inset 0 0 60px rgb(25, 0, 255); }
+                
+                 100% 
+                 {box-shadow: 0 0 35px rgb(25, 0, 255),inset 0 0 35px rgb(25, 0, 255);
+                    filter:hue-rotate(360deg)} 
+                   
+                }}
+            
+                @media (max-width:600px){
+
+                    .footerbox2{display: none;}
+                            .footerbox3{display: none;}
+                            .footerbox4{display: none;}
+                            .footerbox5{display: none;}
+             
+                    .circle{width: 500px;
+                        height: 500px;
+                }
+                h1{font-size: 14px;}
+                a.contactus2{
+                    padding: 5px 10px; }
+
+                    .onoff{
+                        
+                        font-size: 14px;
+                        
+                       
+                        
+                    }
+
+                    .circle:before{
+                        content:'';
+                        position: absolute;
+                        top: 50px;
+                        left: 50px;
+                        right: 50px;
+                        bottom: 50px;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                        /* box-shadow: 0 0 50px #0f0,inset 0 0 50px #0f0; */
+                        /* box-shadow: 0 0 70px rgb(25, 0, 255),inset 0 0 70px rgb(25, 0, 255); */
+                        /* -webkit-box-reflect:below 10px liner-gradient(transparent,#0002); */
+                        animation: animate 7s linear infinite;
+                    }
+                    .circle:after{
+                        content:'';         
+                        position: absolute;
+                        top: 50px;
+                        left: 50px;
+                        right: 50px;
+                        bottom: 50px;
+                        border:1px solid #fff;
+                        border-radius: 50%;
+                        /* box-shadow: 0 0 50px #0f0,inset 0 0 50px #0f0; */
+                        /* box-shadow: 0 0 100px #FFF,inset 0 0 0px #fff; */
+                        /* -webkit-box-reflect:below 10px liner-gradient(transparent,#0002); */
+                        animation: animate 7s linear infinite;
+                    }
+                    .learn{margin-top: 20px;}
+                                   
+                                    h2.connect{font-size: 20px;
+                                        max-width: 90%;
+                                        text-align: center;
+                                        
+                                        
+                                    }
+                                    h2.welove{font-size: 20px;
+                                        max-width: 90%;
+                                        text-align: center;
+                                        
+                                        
+                                    }
+                                    p#hire{font-size: 14px;
+                                        width: 400px;}
+                                    p#hire2{font-size: 14px;
+                                        width: 400px;}
+                                    
+        
+                
+                                     footer{
+                                        padding-top: 0;
+                                        grid-area: footer;
+                                        background-color: #FFF;
+                                        display: grid;
+                                        width: 90%;
+                                        height: max-content;
+                                        grid-template-columns:1fr 1fr  ;
+                                        grid-template-rows:0.5fr ;
+                                        grid-template-areas: "footerbox1 footerbox6 " ;
+                                        margin: 0 auto;
+                                        font-size: 14px;
+                                    } 
+                                        
+                                        
+                                    
+                                    footer li{display:none;}
+                                    .footerbox1{grid-area: footerbox1;
+                                    margin-left: 0;}
+                                    /* .footerbox2{grid-area: footerbox2;}
+                                    .footerbox3{grid-area: footerbox3;}
+                                    .footerbox4{grid-area: footerbox4;}
+                                    .footerbox5{grid-area: footerbox5;} */
+                                    .footerbox6{grid-area: footerbox6;
+                                        position: relative;}
+                                        .SNS{
+                                            position: absolute;
+                                            bottom: 0;
+                                            right: 0;
+                                        }
+                                
+                               
+                        }   
+                        
+                        @media (max-width:500px){
+                            
+
+                            
+             
+                            .circle{width: 400px;
+                                height: 400px;
+                        }
+                        
+        
+                            .circle:before{
+                                content:'';
+                                position: absolute;
+                                top: 50px;
+                                left: 50px;
+                                right: 50px;
+                                bottom: 50px;
+                                border: 1px solid #fff;
+                                border-radius: 50%;
+                                /* box-shadow: 0 0 50px #0f0,inset 0 0 50px #0f0; */
+                                /* box-shadow: 0 0 70px rgb(25, 0, 255),inset 0 0 70px rgb(25, 0, 255); */
+                                /* -webkit-box-reflect:below 10px liner-gradient(transparent,#0002); */
+                                animation: animate 7s linear infinite;
+                            }
+                            .circle:after{
+                                content:'';         
+                                position: absolute;
+                                top: 50px;
+                                left: 50px;
+                                right: 50px;
+                                bottom: 50px;
+                                border:1px solid #fff;
+                                border-radius: 50%;
+                                /* box-shadow: 0 0 50px #0f0,inset 0 0 50px #0f0; */
+                                /* box-shadow: 0 0 100px #FFF,inset 0 0 0px #fff; */
+                                /* -webkit-box-reflect:below 10px liner-gradient(transparent,#0002); */
+                                animation: animate 7s linear infinite;
+                            }
+                        #hire{width: 400px;}
+                        #hire2{width: 400px;} 
+                    
+                        .whatwedo{
+    
+                        padding-bottom: 0;
+                        margin-bottom: 20px;
+                        } 
+                        .onoff{
+                            font-size: 12px;
+                            position: absolute;
+                            bottom: 1%;
+                            left: 5%;
+                           
+                            
+                        }}
