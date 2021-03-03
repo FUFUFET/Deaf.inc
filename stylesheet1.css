@@ -54,16 +54,29 @@ a:visited{text-decoration: none;}
 /* nav property start */
 nav{
     grid-area: nav;
-    font-family:Montserrat;
-    background-color: #fff;
+    z-index: 10;
+    /* font-family:Montserrat;
+    background-color: rgb(255, 255, 255);
     font-size:16px;
     display:flex;
     align-items:center;
     height:100px;
     width:90%;
     margin:0 auto;
-    justify-content: space-between;}
+    justify-content: space-between;} */}
 
+    .desktop-nav{
+        font-family:Montserrat;
+        background-color: rgb(255, 255, 255);
+        font-size:16px;
+        display:flex;
+        align-items:center;
+        height:100px;
+        width:90%;
+        margin:0 auto;
+        justify-content: space-between;
+        
+    }
 .chat:hover{
         border: solid 3px #E9C2F8;
         background-color: #ffffff;}
@@ -125,6 +138,8 @@ place-items: center;}
         font-family: Montserrat;
         justify-self: center;
         align-self: center;
+        line-height: 1.5em;
+        
         
     }
     .currentcustomer{grid-area: currentcustomer;
@@ -361,4 +376,186 @@ text-align: center;}
             bottom: 0;
             right: 0;
         }
+
+
         
+   /* hamburger           start       */
+
+   .mobile-nav{
+    height: 100px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.humburger{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.humburger:hover{
+    
+    border: solid 3px #E9C2F8;
+    color: #FFF;
+    background-color: #324AA4;}
+
+
+.humburger:focus{
+    
+    border: solid 5px;
+    border-color: #324AA4;
+    outline: #324AA4;}
+
+    .mobile-navlist{
+        display: block;
+        position: absolute;
+        top: 100px;
+        left:0;
+        width: 100%;
+    background-color: white;
+        text-align: center;
+        padding: 30px;
+        font-family: Montserrat;
+        font-size: 16px;
+        line-height: 2em;
+    }     
+
+
+
+ .mobnavlistcenter{
+    padding: 5px;
+}
+
+#hamburger #expanded{
+    display: none;
+} 
+
+ /* hamburger    end    */
+
+@media (max-width:900px){
+    .desktop-nav{
+        display:none;}
+    
+        .mobile-navlist{
+            display:none;
+            position: absolute;
+            top: 100px;
+            left:0;
+            width: 100%;
+        background-color: white;
+            text-align: center;
+            padding: 30px;
+            font-family: Montserrat;
+            font-size: 16px;
+            line-height: 2em;
+        }     
+        
+        .mobile-navlist.show{
+            display:block;
+        }      
+    }
+
+@media (min-width:901px){
+    .mobile-nav{
+        display:none;}}
+
+
+
+@media (min-width:601px) and (max-width:1000px){
+
+
+    .container{
+        display: grid;
+        height:100%;
+        
+        grid-template-columns:1fr ;
+        grid-template-rows:0.1fr 2fr 2fr 1fr 1fr;
+        grid-template-areas: "nav""main""review" "box3""footer" ;}
+
+
+        .Customer{
+            grid-area: Customer;
+            display: grid;
+           
+          
+            height: auto;
+            /* height:100%; */
+            grid-template-columns:1fr 1fr 1fr 1fr ;
+            grid-template-rows:0.5fr 1.5fr 1.5fr;
+            grid-template-areas: "h1 h1 h1 h1""currentcustomer currentcustomer currentcustomer currentcustomer""newcustomer newcustomer emergencycustomer emergencycustomer"  ;
+        place-items: center;}
+    
+        .currentcustomer{
+            justify-self: center;
+        margin: 10px;}
+
+            .newcustomer{
+                justify-self: right;
+                margin: 10px;}
+            .emergencycustomer{
+                justify-self: left;
+                margin: 10px;}
+
+
+                .ABCreviews{
+    
+                    display: grid;
+                    
+                    height:fit-content;
+                    grid-template-columns:1fr 1fr 1fr 1fr ;
+            grid-template-rows:0.5fr 1fr 1fr;
+            grid-template-areas: "h2 h2 h2 h2""currentcustomer currentcustomer currentcustomer currentcustomer""newcustomer newcustomer emergencycustomer emergencycustomer"  ;
+        
+                place-items: center;}      
+                
+                .Convenience2{
+                    width:90%;
+                    max-width: 90%;
+                    margin: 0 auto;
+                    grid-area:Convenience2 ;
+                    font-family: Montserrat;}       
+            
+                    h1{
+                        max-width: 90%;
+                        text-align: center;
+                        
+                    }
+
+
+                    footer{
+                        padding-top: 3%;
+                        grid-area: footer;
+                        background-color: #FFF;
+                        display: grid;
+                        width: 90%;
+                        height: max-content;
+                        grid-template-columns:1fr 1fr 1fr 1fr ;
+                        grid-template-rows:0.5fr 0.3fr;
+                        grid-template-areas: "footerbox2 footerbox3 footerbox4 footerbox5 ""footerbox1 footerbox1 footerbox6 footerbox6 " ;
+                        margin: 0 auto;
+                    font-family: Lato;}
+                        
+                        
+                    
+                    footer li{
+                        list-style-type: none;
+                        padding: 5px 0px 5px 30px;}
+                    .footerbox1{grid-area: footerbox1;
+                    margin-left: 0;}
+                    .footerbox2{grid-area: footerbox2;}
+                    .footerbox3{grid-area: footerbox3;}
+                    .footerbox4{grid-area: footerbox4;}
+                    .footerbox5{grid-area: footerbox5;}
+                    .footerbox6{grid-area: footerbox6;
+                        position: relative;}
+                        .SNS{
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                        }
+                
+               
+        }
+    

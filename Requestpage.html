@@ -17,24 +17,53 @@
     </head>
     <body>
         <div class="container">
-            <nav>
-                <a href="Home.html" class="logo">
-                    <img src="logo.svg" width="120px" alt="deaf inc logo" role="img">
-                  </a>
-                  <ul>
-                  <li><a href="Home.html"  class="navlistcenter">Home</a></li>
-                  <li><a href="#" id="active" class="navlistcenter"aria-current="page">Interpretation</a></li>
-                  <li><a href="#" class="navlistcenter">About</a></li>
-                  <li><a href="#" class="navlistcenter">Events</a></li>
-                  <li><a href="#" class="navlistcenter">Donate</a></li>
-                </ul>
-                  <div class="contactandchat">
-                  <a href="#"class="contactus" >Contact Us</a>
-                  <a href="#" class="chat">
-                    <img src="chat.svg" role="img" alt="chat" width="44px">
-                    
-                  </a></div>
-            </nav>
+          <nav>
+            <div class="desktop-nav">
+              <a href="Home.html" class="logo">
+                  <img src="logo.svg" width="120px"alt="deaf inc logo" role="img">
+                </a>
+                <ul>
+                <li><a href="Home.html" class="navlistcenter" >Home</a></li>
+                <li><a href="Requestpage.html" id="active"aria-current="page" class="navlistcenter">Interpretation</a></li>
+                <li><a href="#" class="navlistcenter">About</a></li>
+                <li><a href="#" class="navlistcenter">Events</a></li>
+                <li><a href="#" class="navlistcenter">Donate</a></li>
+              </ul>
+                <div class="contactandchat">
+                <a href="#"class="contactus" >Contact Us</a>
+                <a href="#" class="chat">
+                  <img src="chat.svg" role="img" alt="chat" width="44px">
+                  
+                </a></div>
+              </div>
+              
+<!-- mobile nav start -->
+              <div class="mobile-nav">
+              <button class="humburger" id="hamburger"  aria-expanded="false"aria-label="Menu">
+                <img src="hamburger.svg" width="44px"alt="" role="img" aria-hidden="true">
+              </button>
+              
+              <ul class="mobile-navlist" id="mobile-navlist">
+              <li><a href="Home.html" class="mobnavlistcenter" >Home</a></li>
+              <li><a href="Requestpage.html" class="mobnavlistcenter"aria-current="page">Interpretation</a></li>
+              <li><a href="#" class="mobnavlistcenter">About</a></li>
+              <li><a href="#" class="mobnavlistcenter">Events</a></li>
+              <li><a href="#" class="mobnavlistcenter">Donate</a></li>
+              <li><a href="#" class="mobnavlistcenter">Contact Us</a></li>
+              
+            </ul>
+          
+            <img src="logo.svg" width="120px"alt="deaf inc logo" role="img">
+              
+              <a href="#" class="chat">
+                <img src="chat.svg" role="img" alt="chat" width="44px">
+                
+              </a>
+            </div>
+<!-- -- mobile menu end -- -->   
+              
+              
+          </nav>
             <main>
               <div class="Customer">
                 <h1>REQUEST A CERTIFICATE INTERPRETER</h1>
@@ -105,7 +134,7 @@
 
 
         </div>
-
+        <script src="Home.js"></script>
     </body>
 
     </html>
