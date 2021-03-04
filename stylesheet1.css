@@ -423,12 +423,6 @@ text-align: center;}
     }     
 
 
-
- .mobnavlistcenter{
-    padding: 5px;
-    
-}
-
 #hamburger #expanded{
     display: none;
 } 
@@ -455,7 +449,11 @@ text-align: center;}
         
         .mobile-navlist.show{
             display:block;
-        }      
+        } 
+        
+        .mobile-navlist li a{padding: 5px;
+
+        }
     }
 
 @media (min-width:801px){

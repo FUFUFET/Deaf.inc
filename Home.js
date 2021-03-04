@@ -24,7 +24,7 @@ hamburger.addEventListener('click',() =>{
 document.body.classList.toggle('js-enabled')
 document.addEventListener('DOMContentLoaded', function(event){
 
-let ken = document.getElementById('hamburger')
+let ken = document.getElementById('hamburger')  
 ken.setAttribute('aria-expanded','false')
 ken.onclick = function(){
   if(this.getAttribute('aria-expanded') == 'false')

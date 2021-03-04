@@ -452,9 +452,9 @@ margin: 0 auto;}
 
 
 
- .mobnavlistcenter{
+ /* .mobnavlistcenter{
     padding: 5px;
-}
+} */
 
 #hamburger #expanded{
     display: none;
@@ -478,11 +478,17 @@ margin: 0 auto;}
             font-family: Montserrat;
             font-size: 16px;
             line-height: 2em;
+            
         }     
         
         .mobile-navlist.show{
             display:block;
         }
+        
+        .mobile-navlist li a{padding: 5px;
+
+        }
+        
         p#hire{font-size: 16px;}
         p#hire2{font-size: 16px;}   
      
