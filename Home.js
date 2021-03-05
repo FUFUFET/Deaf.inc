@@ -33,4 +33,20 @@ this.setAttribute('aria-expanded' ,'true');
   }else{
     this.setAttribute('aria-expanded' ,'false');
   }}});
+
+  
+// swich
+  document.querySelectorAll(".switch").forEach(function(theSwitch) {
+    theSwitch.addEventListener("click", handleClickEvent, false);
+  });
+  
+  function handleClickEvent(evt) {
+    let el = evt.target;
+  
+    if (el.getAttribute("aria-checked") == "true") {
+        el.setAttribute("aria-checked", "false");
+    } else {
+        el.setAttribute("aria-checked", "true");
+    }
+  }
   

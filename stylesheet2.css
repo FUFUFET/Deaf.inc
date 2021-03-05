@@ -221,7 +221,8 @@ svg{
 }
 
 /* toggle switch start */
-.onoff{
+
+/* .onoff{
     font-family:Montserrat;
     background-color: black;
     border:none;
@@ -243,7 +244,76 @@ color: #fff;}
     outline: solid 3px #324AA4;
     padding: 5px;
     background-color: #000000;
+color: #fff;} */
+
+.animationswitch{
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+   
+}
+label{
+    font: 14px "Open Sans", "Arial", sans-serif;
+    line-height: 20px;
+    user-select: none;
+    vertical-align: middle;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    color: #FFF;
+    pointer-events: none;
+}
+button.switch {
+    
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 5px;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: center;
+    font: 14px "Open Sans", "Arial", serif;
+  }
+  
+  button.switch span {
+    padding: 0 4px;
+    pointer-events: none;
+  }
+  
+  [role="switch"][aria-checked="false"] :first-child,
+  [role="switch"][aria-checked="true"] :last-child {
+    background:#ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  [role="switch"][aria-checked="false"] :last-child,
+  [role="switch"][aria-checked="true"] :first-child {
+    color: rgb(97, 97, 97);
+  }
+  
+  
+
+  .switch:hover{
+    border: solid 2px #E9C2F8;
+    padding: 2px;
+    background-color: #000000;
 color: #fff;}
+
+.switch:focus{
+    outline: solid 3px #324AA4;
+    padding: 5px;
+    background-color: #000000;
+color: #fff;}
+
+
+
+
+
 
 /* toggle switch end*/
 
@@ -746,7 +816,7 @@ margin: 0 auto;}
                 a.contactus2{
                     padding: 5px 10px; }
 
-                    .onoff{
+                    .switch{
                         
                         font-size: 14px;
                         
@@ -883,11 +953,11 @@ margin: 0 auto;}
                         padding-bottom: 0;
                         margin-bottom: 20px;
                         } 
-                        .onoff{
+                        .animationswitch{
                             font-size: 12px;
                             position: absolute;
                             bottom: 1%;
-                            left: 5%;
+                            left: 2%;
                            
                             
                         }}
