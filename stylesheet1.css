@@ -180,7 +180,7 @@ place-items: center;}
         
         padding: 0px 10px;
         max-width:90%;
-        text-align: justify;
+        text-align:left;
     }
     #p2{
         font-size: 16px;
@@ -188,7 +188,7 @@ place-items: center;}
         
         padding: 0px 10px;
         max-width:90%;
-        text-align: justify;
+        text-align:left;
     }
     #p3{
         font-size: 16px;
@@ -196,7 +196,7 @@ place-items: center;}
         
         padding: 0px 10px;
         max-width:90%;
-        text-align: justify;
+        text-align:left;
     }
 
 
@@ -275,7 +275,7 @@ place-items: center;}
         
         padding: 30px 10px;
         max-width:90%;
-        text-align: justify;
+        text-align:left;
     }
     #p5{
         font-size: 16px;
@@ -283,7 +283,7 @@ place-items: center;}
         
         padding: 30px 10px;
         max-width:90%;
-        text-align: justify;
+        text-align:left;
     }
     #p6{
         font-size: 16px;
@@ -291,7 +291,7 @@ place-items: center;}
         
         padding: 30px 10px;
         max-width:90%;
-        text-align: justify;
+        text-align:left;
     }
 
 
