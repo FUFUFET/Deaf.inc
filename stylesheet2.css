@@ -246,6 +246,10 @@ color: #fff;}
     background-color: #000000;
 color: #fff;} */
 
+
+
+/* 
+accessible switch */
 .animationswitch{
     position: absolute;
     bottom: 3%;
@@ -293,10 +297,10 @@ button.switch {
   
   [role="switch"][aria-checked="false"] :last-child,
   [role="switch"][aria-checked="true"] :first-child {
-    color: rgb(97, 97, 97);
+    color: rgb(219, 219, 219);
   }
-  
-  
+
+ 
 
   .switch:hover{
     border: solid 2px #E9C2F8;
