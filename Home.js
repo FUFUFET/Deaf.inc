@@ -35,11 +35,16 @@ this.setAttribute('aria-expanded' ,'true');
   }}});
 
   
+
+
+
 // swich
   document.querySelectorAll(".switch").forEach(function(theSwitch) {
     theSwitch.addEventListener("click", handleClickEvent, false);
   });
   
+
+  // swich aria
   function handleClickEvent(evt) {
     let el = evt.target;
   
@@ -49,4 +54,6 @@ this.setAttribute('aria-expanded' ,'true');
         el.setAttribute("aria-checked", "true");
     }
   }
+  
+
   

@@ -22,13 +22,11 @@ a{
     
 
 a:focus{
-    font-weight: bold;
-    border: solid 5px;
-    border-color: #324AA4;
-    outline: #324AA4;}
+    outline:solid 3px #324AA4;
+outline-offset: 3px;}
 
 a:hover{ 
-    border: solid 3px #E9C2F8;
+    /* border: solid 1px #E9C2F8; */
     color: #FFF;
     background-color: #324AA4;}
     
@@ -46,7 +44,21 @@ a:hover{
 
 a:visited{text-decoration: none;}
 
-/* link property end */
+#skipnav {display:grid;
+   place-items: center;
+   font-family:Montserrat;
+   background-color: #324AA4;
+   height: 44px;
+  
+    }
+    #skipnav a{color: #fff;
+       
+         }
+         #skipnav a:focus{
+            outline:solid 3px #ffffff;
+        outline-offset: 2px;}
+
+/* link property end */ 
 
 /* desktopnav property start */
 nav{
@@ -62,6 +74,7 @@ nav{
     margin:0 auto;
     justify-content: space-between;} */}
 
+
     .desktop-nav{
         font-family:Montserrat;
         background-color: rgb(255, 255, 255);
@@ -74,11 +87,13 @@ nav{
         justify-content: space-between;
         
     }
-    
 
-.chat:hover{
-        border: solid 3px #E9C2F8;
-        background-color: #ffffff;}
+
+    .logo{display:grid;
+    place-items: center;}
+.logo:hover{background-color: #ffffff;}
+ .chat:hover{
+        background-color: #ffffff;} 
         
           
 
@@ -146,11 +161,17 @@ z-index:1;}
 
 .contactus2:hover{
     border: solid 3px #E9C2F8;
+    border-radius: 10px;
     background-color: #000000;
+    
 color: #fff;}
 
 .contactus2:focus{
-    border: solid 3px #324AA4;
+    border-radius: 10px;
+    outline: solid 3px #324AA4;
+    -moz-outline-radius:10px;
+    
+    
     
     background-color: #000000;
 color: #fff;}
@@ -282,6 +303,7 @@ button.switch {
     vertical-align: middle;
     text-align: center;
     font: 14px "Open Sans", "Arial", serif;
+    cursor: pointer;
   }
   
   button.switch span {
@@ -304,13 +326,14 @@ button.switch {
 
   .switch:hover{
     border: solid 2px #E9C2F8;
-    padding: 2px;
+    
     background-color: #000000;
 color: #fff;}
 
 .switch:focus{
     outline: solid 3px #324AA4;
-    padding: 5px;
+    outline-offset: 3px;
+    
     background-color: #000000;
 color: #fff;}
 
@@ -552,16 +575,16 @@ margin: 0 auto;}
 }
 .humburger:hover{
     
-    border: solid 3px #E9C2F8;
+
     color: #FFF;
     background-color: #324AA4;}
 
 
 .humburger:focus{
     
-    border: solid 5px;
-    border-color: #324AA4;
-    outline: #324AA4;}
+    outline: solid 3px #324AA4;
+    outline-offset: 3px;
+}
 
     .mobile-navlist{
         display: block;

@@ -49,6 +49,9 @@ a:hover{
 
 a:visited{text-decoration: none;}
 
+#skipnav {justify-self: center;
+margin: 0 auto;}
+
 /* link property end */
 
 /* nav property start */
@@ -89,10 +92,10 @@ nav ul{
 
 nav li{
     list-style-type: none;
-    padding: 0;}
+    }
 
 .navlistcenter{
-    padding: 5px 25px;}
+    margin: 5px 25px;}
 
 
 .contactandchat{
