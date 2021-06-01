@@ -6,6 +6,29 @@
         line-height: 1.6em;
     }
 
+    
+    #skipnav {display:grid;
+        place-items: center;
+        font-family:Montserrat;
+        background-color: #324AA4;
+        height: 44px;
+       
+         }
+         #skipnav a{color: #fff;
+            
+              }
+              #skipnav a:hover{
+                outline:solid 1px #ffffff;
+             
+             background-color: aliceblue;
+            color: black;}
+              #skipnav a:focus{
+                 outline:solid 1px #ffffff;
+             outline-offset: 0;
+             background-color: aliceblue;
+            color: black;}
+            
+
     .container{
     display: grid;
     height:100%;
@@ -24,33 +47,34 @@ a{
     color: black;}
     
 
-a:focus{
-        font-weight: bold;
-        border: solid 5px;
-        border-color: #324AA4;
-        outline: #324AA4;}
-
-a:hover{ 
-    border: solid 3px #E9C2F8;
-    color: #FFF;
-    background-color: #324AA4;}
+    a:focus{
+        outline:solid 3px #324AA4;
+    outline-offset: 3px;
+    background-color: aliceblue;
+    color: black;
+    }
     
-   
+    a:hover{ 
+        outline:solid 1px #324AA4;
+        color: black;
+        background-color: aliceblue;}
+        
+        
+        
     
-
-#active{
-    text-decoration:underline;
-    text-decoration-color: #324AA4;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 3px;
-    font-weight: bold;}
-
+    #active{
+        text-decoration:underline;
+        text-decoration-color: #324AA4;
+        text-underline-offset: 2px;
+        text-decoration-thickness: 3px;
+        font-weight: bold;}
+    
+    
 
 
 a:visited{text-decoration: none;}
 
-#skipnav {justify-self: center;
-margin: 0 auto;}
+
 
 /* link property end */
 
@@ -80,11 +104,16 @@ nav{
         justify-content: space-between;
         
     }
-.chat:hover{
-        border: solid 3px #E9C2F8;
-        background-color: #ffffff;}
+
         
-          
+        .logo{display:grid;
+            place-items: center;}
+        .logo:hover{background-color: #ffffff;
+        outline: none;}
+         .chat:hover{
+                background-color: #ffffff;} 
+                
+                       
 
 nav ul{
     display: flex;}
@@ -95,7 +124,7 @@ nav li{
     }
 
 .navlistcenter{
-    margin: 5px 25px;}
+    padding: 5px 25px;}
 
 
 .contactandchat{
@@ -105,14 +134,19 @@ nav li{
     justify-content: space-between;}
    
 
-.contactus{
-    padding: 10px 20px;
-    /* margin:0px 15px; */
-    font-size: 16px;
-    color: white;
-    background-color: black;
-    border-color: black;
-    font-family: Montserrat;}
+    .contactus{
+        padding: 10px 20px;
+        /* margin:0px 15px; */
+        font-size: 16px;
+        color: white;
+        background-color: black;
+        border-color: black;
+        font-family:Montserrat;}
+    
+        .contactus:hover{ 
+            outline:solid 1px #324AA4;
+            color: black;
+            background-color: aliceblue;}
     
 /* nav property end */
 
@@ -400,21 +434,22 @@ text-align: center;}
 }
 .humburger:hover{
     
-    border: solid 3px #E9C2F8;
+
     color: #FFF;
     background-color: #324AA4;}
 
 
 .humburger:focus{
     
-    border: solid 5px;
-    border-color: #324AA4;
-    outline: #324AA4;}
+    outline: solid 3px #324AA4;
+    outline-offset: 3px;
+}
+
 
     .mobile-navlist{
         display: block;
         position: absolute;
-        top: 100px;
+        top: 144px;
         left:0;
         width: 100%;
     background-color: white;
@@ -439,7 +474,7 @@ text-align: center;}
         .mobile-navlist{
             display:none;
             position: absolute;
-            top: 100px;
+            top: 144px;
             left:0;
             width: 100%;
         background-color: white;
