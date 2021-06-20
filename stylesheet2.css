@@ -321,7 +321,7 @@ button.switch {
     vertical-align: middle;
     text-align: center;
     font: 14px "Open Sans", "Arial", serif;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   
   button.switch span {
@@ -589,7 +589,7 @@ margin: 0 auto;}
 .humburger{
     background-color: transparent;
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .humburger:hover{
     

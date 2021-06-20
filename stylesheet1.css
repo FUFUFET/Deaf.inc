@@ -430,7 +430,7 @@ text-align: center;}
 .humburger{
     background-color: transparent;
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .humburger:hover{
     
